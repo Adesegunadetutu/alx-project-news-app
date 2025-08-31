@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import {Link,  NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,9 @@ function Navbar() {
   return (
     <nav className="bg-white px-6 py-4 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="font-bold text-red-600 text-xl">NewsExtra</div>
+        <Link to="/" className="font-bold text-red-600 text-xl">
+  NewsExtra
+</Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
